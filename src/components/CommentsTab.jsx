@@ -88,7 +88,7 @@ const CommentsTab = () => {
                   <span className="font-medium">{comment.author}</span>
                   <span className="text-xs text-gray-500">{comment.timestamp}</span>
                 </div>
-                <p className="mt-1 text-sm">{comment.text}</p>
+                <p className="mt-1 text-sm whitespace-break-spaces">{comment.text}</p>
                 <button 
                   onClick={() => setReplyingTo(replyingTo === comment.id ? null : comment.id)}
                   className="mt-2 text-xs text-blue-500 hover:text-blue-700"
@@ -130,7 +130,7 @@ const CommentsTab = () => {
                         <span className="text-sm font-medium">{reply.author}</span>
                         <span className="text-xs text-gray-500">{reply.timestamp}</span>
                       </div>
-                      <p className="mt-1 text-xs">{reply.text}</p>
+                      <p className="mt-1 text-xs whitespace-break-spaces">{reply.text}</p>
                     </div>
                   </div>
                 ))}

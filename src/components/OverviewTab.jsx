@@ -59,10 +59,10 @@ const OverviewTab = () => {
 
       {/* Reporter Section */}
       <div className="space-y-2">
-        <h2 className="text-sm font-medium text-gray-500">Reporter</h2>
+        <h2 className="text-sm font-medium text-gray-500">Reported</h2>
         <div className="flex items-center space-x-3">
           <span className="text-gray-800">{reporter.name}</span>
-          <TeamAvatars />
+          <TeamAvatars count={1} /> 
         </div>
       </div>
 

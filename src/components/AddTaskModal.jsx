@@ -42,7 +42,7 @@ const AddTaskModal = ({ isOpen, onClose, onSubmit }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-100 bg-opacity-10">
       <div className="bg-white dark:bg-navy-700 p-6 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-lg font-semibold mb-4 dark:text-white">Add New Task</h2>
 

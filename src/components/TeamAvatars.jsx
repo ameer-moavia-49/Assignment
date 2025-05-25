@@ -1,4 +1,4 @@
-const TeamAvatars = () => {
+const TeamAvatars = ({ count = 5 }) => {
   const dummyAvatars = [
     "https://i.pravatar.cc/150?img=1",
     "https://i.pravatar.cc/150?img=2",
@@ -9,7 +9,7 @@ const TeamAvatars = () => {
 
   return (
     <div className="flex flex-wrap -space-x-2">
-      {dummyAvatars.map((avatar, index) => (
+      {dummyAvatars.slice(0, count).map((avatar, index) => (
         <div key={index} className="avatar h-8 w-8 hover:z-10">
           <img
             className="rounded-xl ring ring-white dark:ring-navy-700"
